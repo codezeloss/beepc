@@ -4,8 +4,8 @@ import HeaderLogo from "@/components/HeaderLogo";
 
 export default function Footer() {
     return (
-        <div className="bg-white dark:bg-neutral-900 px-6 py-6 lg:px-14 border-t border-t-slate-200/50 pb-20">
-            <div className="mx-auto">
+        <div className="bg-white dark:bg-neutral-900 py-6 border-t border-t-slate-200/50 pb-20">
+            <div className="container mx-auto">
                <HeaderLogo/>
 
 

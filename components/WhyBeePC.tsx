@@ -1,6 +1,6 @@
 export default function WhyBeePc() {
     return (
-        <section className="w-full py-12 md:py-24 lg:py-32">
+        <section id="why" className="w-full py-12 md:py-24 lg:py-32 bg-muted">
             <div className="container px-4 md:px-6">
                 <div className="space-y-4 text-center">
                     <div className="inline-block rounded-lg bg-muted px-3 py-1 text-sm">Why Choose BeePC?</div>

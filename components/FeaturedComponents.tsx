@@ -2,7 +2,7 @@ import Image from "next/image";
 
 export default function FeaturedComponents() {
     return (
-        <section className="w-full py-12 md:py-24 lg:py-32 bg-muted">
+        <section id="components" className="w-full py-12 md:py-24 lg:py-32 bg-muted">
             <div className="container px-4 md:px-6">
                 <div className="flex flex-col items-center justify-center space-y-4 text-center">
                     <div className="space-y-2">
@@ -17,11 +17,11 @@ export default function FeaturedComponents() {
                 </div>
                 <div className="mx-auto grid max-w-5xl items-center gap-6 py-12 lg:grid-cols-2 lg:gap-12">
                     <Image
-                        src="/placeholder.svg"
+                        src="/components.png"
                         alt="Featured image"
-                        className="mx-auto aspect-video overflow-hidden rounded-xl object-cover object-center sm:w-full lg:order-last"
-                        width={550}
-                        height={310}
+                        className="mx-auto overflow-hidden rounded-xl object-contain object-center sm:w-full lg:order-last"
+                        width={450}
+                        height={210}
                         loading="lazy"
                     />
 
