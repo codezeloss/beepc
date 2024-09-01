@@ -76,7 +76,7 @@ export default function OrderForm() {
 
             form.reset();
             setIsSuccess(true)
-            router.push("#order-form")
+            router.push("#order-form-top")
             setIsCPUSelected(false)
             setIsGPUSelected(false)
             setIsRAMSelected(false)
@@ -96,16 +96,16 @@ export default function OrderForm() {
 
     const isPCComponentSelected = isCPUSelected || isGPUSelected || isRAMSelected || isStorageSelected || isMBSelected || isPSSelected
     const disabled = form.formState.isSubmitting || !form.getValues("fullName") || !form.getValues("email") || !form.getValues("phone") || !form.getValues("shippingAddress")
-    
+
     return (
-        <div id="order-form" className="w-full py-12 md:py-24 lg:py-32">
+        <section id="order-form" className="w-full py-12 md:py-24 lg:py-32">
             <div className="container px-4 md:px-6">
-                <div className="space-y-4 text-center">
-                    <p className="inline-block rounded-lg text-white bg-blue-500 font-medium px-3 py-1 text-sm">
+                <div id="order-form-top" className="space-y-4 text-center">
+                    <p className="inline-block rounded-lg text-white bg-blue-500 font-medium px-3 py-1 text-xs sm:text-sm">
                         Order Form
                     </p>
                     <h2 className="text-3xl font-bold tracking-tighter sm:text-5xl">Build Your Dream PC</h2>
-                    <p className="max-w-[600px] text-muted-foreground md:text-lg/relaxed text-center mx-auto">
+                    <p className="max-w-[600px] text-muted-foreground text-sm md:text-lg/relaxed text-center mx-auto">
                         Select the components you need and we&apos;ll help you put together the perfect PC
                     </p>
                 </div>
@@ -122,7 +122,7 @@ export default function OrderForm() {
                         className="relative w-full h-48 rounded-2xl border border-slate-400 cursor-pointer hover:border-2 flex items-center justify-center"
                     >
                         <Cpu className="size-20"/>
-                        <p className="text-base font-semibold absolute left-4 top-4">CPU</p>
+                        <p className="text-sm md:text-base font-semibold absolute left-4 top-4">CPU</p>
                     </Button>
                     <Button
                         onClick={() => {
@@ -135,7 +135,7 @@ export default function OrderForm() {
                         className="relative w-full h-48 rounded-2xl border border-slate-400 cursor-pointer hover:border-2 flex items-center justify-center"
                     >
                         <Microchip className="size-20"/>
-                        <p className="text-base font-semibold absolute left-4 top-4">GPU</p>
+                        <p className="text-sm md:text-base font-semibold absolute left-4 top-4">GPU</p>
                     </Button>
                     <Button
                         onClick={() => {
@@ -148,7 +148,7 @@ export default function OrderForm() {
                         className="relative w-full h-48 rounded-2xl border border-slate-400 cursor-pointer hover:border-2 flex items-center justify-center"
                     >
                         <MemoryStick className="size-20"/>
-                        <p className="text-base font-semibold absolute left-4 top-4">RAM</p>
+                        <p className="text-sm md:text-base font-semibold absolute left-4 top-4">RAM</p>
                     </Button>
                     <Button
                         onClick={() => {
@@ -161,7 +161,7 @@ export default function OrderForm() {
                         className="relative w-full h-48 rounded-2xl border border-slate-400 cursor-pointer hover:border-2 flex items-center justify-center"
                     >
                         <Database className="size-20"/>
-                        <p className="text-base font-semibold absolute left-4 top-4">Storage</p>
+                        <p className="text-sm md:text-base font-semibold absolute left-4 top-4">Storage</p>
                     </Button>
                     <Button
                         onClick={() => {
@@ -174,7 +174,7 @@ export default function OrderForm() {
                         className="relative w-full h-48 rounded-2xl border border-slate-400 cursor-pointer hover:border-2 flex items-center justify-center"
                     >
                         <Dice6 className="size-20"/>
-                        <p className="text-base font-semibold absolute left-4 top-4">Motherboard</p>
+                        <p className="text-sm md:text-base font-semibold absolute left-4 top-4">Motherboard</p>
                     </Button>
                     <Button
                         onClick={() => {
@@ -187,7 +187,7 @@ export default function OrderForm() {
                         className="relative w-full h-48 rounded-2xl border border-slate-400 cursor-pointer hover:border-2 flex items-center justify-center"
                     >
                         <BatteryCharging className="size-20"/>
-                        <p className="text-base font-semibold absolute left-4 top-4">Power System</p>
+                        <p className="text-sm md:text-base font-semibold absolute left-4 top-4">Power System</p>
                     </Button>
                 </div>}
 
@@ -527,19 +527,19 @@ export default function OrderForm() {
                 :
                     <div className="mx-auto max-w-2xl w-full space-y-4 flex flex-col my-11 md:my-28 items-center justify-center">
                         <CheckIcon className="size-20 text-green-600 bg-green-100 rounded-full p-4"/>
-                        <p className="font-semibold text-base">Order place successfully!</p>
+                        <p className="font-semibold text-base">Order placed successfully!</p>
                         <p className="text-muted-foreground max-w-sm text-sm font-medium text-center">
-                            You will get a confirmation email in the following days once the order is approved.
+                            You will get a confirmation email in the following days once your order is treated.
                         </p>
                         <Button type="button" variant="default" onClick={() => {
                             setIsSuccess(false)
-                            router.push("#hero")
+                            router.push("#header")
                         }}>
                             Confirm
                         </Button>
                     </div>
                 }
             </div>
-        </div>
+        </section>
     );
 }

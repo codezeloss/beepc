@@ -2,15 +2,15 @@ import Image from "next/image";
 
 export default function FeaturedComponents() {
     return (
-        <div id="components" className="w-full py-12 md:py-24 lg:py-32 bg-muted">
+        <section id="components" className="w-full py-12 md:py-24 lg:py-32 bg-muted">
             <div className="container px-4 md:px-6">
                 <div className="flex flex-col items-center justify-center space-y-4 text-center">
                     <div className="space-y-2">
-                        <p className="inline-block rounded-lg bg-muted px-3 py-1 text-sm">Featured Components</p>
+                        <p className="inline-block rounded-lg bg-muted font-medium bg-black text-white px-3 py-1 text-xs sm:text-sm">Featured Components</p>
                         <h2 className="text-3xl font-bold tracking-tighter sm:text-5xl">
                             High-Performance Parts for Your PC
                         </h2>
-                        <p className="max-w-[900px] text-muted-foreground md:text-lg/relaxed">
+                        <p className="max-w-[900px] text-muted-foreground text-sm md:text-lg/relaxed">
                             Upgrade your computer with the latest and greatest components. Our selection includes
                             top-of-the-line CPUs, GPUs, RAM, and more to give your system a serious boost.
                         </p>
@@ -30,19 +30,19 @@ export default function FeaturedComponents() {
                         <div className="grid gap-6">
                                 <div className="grid gap-1">
                                     <h3 className="text-xl font-bold">High-End CPUs</h3>
-                                    <p className="text-muted-foreground text-sm">
+                                    <p className="text-muted-foreground text-xs sm:text-sm">
                                         Unlock maximum performance with our selection of cutting-edge CPUs.
                                     </p>
                                 </div>
                                 <div className="grid gap-1">
                                     <h3 className="text-xl font-bold">Powerful GPUs</h3>
-                                    <p className="text-muted-foreground text-sm">
+                                    <p className="text-muted-foreground text-xs sm:text-sm">
                                         Experience stunning visuals with our top-tier graphics cards.
                                     </p>
                                 </div>
                                 <div className="grid gap-1">
                                     <h3 className="text-xl font-bold">High-Speed RAM</h3>
-                                    <p className="text-muted-foreground text-sm">
+                                    <p className="text-muted-foreground text-xs sm:text-sm">
                                         Boost your system&apos;s responsiveness with our high-performance memory.
                                     </p>
                                 </div>
@@ -50,6 +50,6 @@ export default function FeaturedComponents() {
                     </div>
                 </div>
             </div>
-        </div>
+        </section>
     );
 }

@@ -19,17 +19,17 @@ export default function RootLayout({
     children: ReactNode;
 }>) {
     return (
-        <html lang="en" className="scroll-smooth">
+        <html lang="en">
+        <body className={poppins.className}>
         <ThemeProvider
             attribute="class"
             defaultTheme="light"
         >
-            <body className={poppins.className}>
             <Header/>
-                {children}
+            {children}
             <Footer/>
-            </body>
         </ThemeProvider>
+        </body>
         </html>
     );
 }
