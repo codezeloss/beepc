@@ -5,11 +5,11 @@ import WhyBeePc from "@/components/WhyBeePC";
 
 export default function Home() {
     return (
-            <div className="">
+            <main className="w-full h-full bg-white dark:bg-neutral-900">
                 <Hero/>
                 <FeaturedComponents/>
                 <OrderForm/>
                 <WhyBeePc />
-            </div>
+            </main>
     );
 }

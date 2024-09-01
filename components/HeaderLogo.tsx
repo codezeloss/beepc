@@ -3,8 +3,8 @@ import Image from "next/image";
 
 export default function HeaderLogo() {
     return (
-        <Link href="/">
-                <Image className="text-xs" src="/beepc-logo.svg" alt="Jobeefy" height={70} width={70}/>
+        <Link href="/" >
+                <Image className="text-xs" src="/beepc-logo.svg" alt="BeePC" height={70} width={70}/>
         </Link>
     );
 }
