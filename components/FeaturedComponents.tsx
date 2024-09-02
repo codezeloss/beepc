@@ -6,7 +6,7 @@ export default function FeaturedComponents() {
             <div className="container px-4 md:px-6">
                 <div className="flex flex-col items-center justify-center space-y-4 text-center">
                     <div className="space-y-2">
-                        <p className="inline-block rounded-lg bg-muted font-medium bg-black text-white px-3 py-1 text-xs sm:text-sm">Featured Components</p>
+                        <p className="inline-block rounded-lg font-medium bg-neutral-900 text-white px-3 py-1 text-xs sm:text-sm">Featured Components</p>
                         <h2 className="text-3xl font-bold tracking-tighter sm:text-5xl">
                             High-Performance Parts for Your PC
                         </h2>
